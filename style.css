@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?9a5qha');
+  src:  url('fonts/icomoon.eot?9a5qha#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?9a5qha') format('truetype'),
+    url('fonts/icomoon.woff?9a5qha') format('woff'),
+    url('fonts/icomoon.svg?9a5qha#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+.video-responsive {
+  position: relative;
+  padding-bottom: 30.25%; /* 16/9 ratio */
+  padding-top: 30px; /* IE6 workaround*/
+  height: 0;
+  overflow: hidden;
+  }
+  
+  .video-responsive iframe,
+  .video-responsive object,
+  .video-responsive embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 50%;
+  }

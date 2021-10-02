@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <%- title%>
+    </title>
+    <%- include ('partials/head.html')%>
+</head>
+
+<body>
+    <%- include ('partials/navigation.html')%>
+        <br>
+        <div class="container-fluid  degradado">
+            <div class="card pblack">
+                <div class="card-header ">
+                   <h1 class="pblack"> Testing Firebase </h1>
+                </div>
+                <div class="card-body">
+                    <% if (contactos) { %>
+                        <h4>Registros</h4>
+                        <table class="table table-dordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th> Nombre</th>
+                                    <th> Apellido</th>
+                                    <th> Extra</th>
+                                    <th> Eliminar</th>
+                                    
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% for(let key in contactos) { %>
+                                    <tr>
+                                        <td>  <%-contactos[key].nombre %></td>
+                                        <td>  <%-contactos[key].apellido  %></td>
+                                        <td>  <%- contactos[key].extra %></td>
+                                        <td>  <a href="/delete/<%- key %>" class="btn btn-danger"> borra</a></td>
+                                  
+                                    </tr>
+                                    
+                                  <% } %> 
+                            </tbody>
+                        </table>
+                          
+                         <% } else{ %>
+                            <h4>Sin Registros</h4>
+                         <% } %>
+                </div>
+                <div class="card-footer">
+                    <form action="/base" method="POST">
+                        <div class="form-group">
+                            <input type="text" name="name" placeholder="Nombre" autofocus class="form-control">
+                        </div>
+                        <div class="form-group">
+                                <br>
+                            <input type="text" name="lasname" placeholder="apellido" class="form-control" >
+                        </div>
+                        <div class="form-group">
+                            <br>
+                            <input type="text" name="extra" placeholder="Nota extra" class="form-control" >
+                        </div>
+                        <br>
+                      <center> <button class="btn btn-primary btn-block" style="width: 50%; ">   Nuevo </button></center> 
+                    </form>
+            </div>
+        </div>
+        </div>
+</body>
+
+</html>

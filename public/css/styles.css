@@ -1,0 +1,198 @@
+body{
+    font-family: Century Gothic,CenturyGothic,AppleGothic,sans-serif; 
+   /* font-family: 'Noto Sans Display', sans-serif;
+    font-family: 'Varela Round', sans-serif;
+*/
+    background:  url(/img/bgbg.png) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-size: cover;
+    color: #fff;
+    font-size: 14px;
+    display: flex;
+  flex-direction: column;
+}
+
+h1{
+    color: #fff;
+    
+}   
+
+a{
+    color: #fff;
+}
+a:hover {
+    color: rgb(252, 104, 104);
+  }
+  .seleccionado{
+    color: rgb(255, 8, 0);
+  }
+  .pblanco{
+      color: #fff;
+  }
+  .pblack{
+    color: rgb(0, 0, 0);
+    text-align: justify !important;
+    margin: 2%;
+}
+.pblackleyend{
+    color: rgb(0, 0, 0);
+}
+  .degradado{
+      background: rgba(255, 255, 255, 0.459);
+      width: 95%;
+      margin-left: 2%;
+      height: 100%;
+      
+  }
+  .degradado2{
+    background: rgba(255, 255, 255, 0.616);
+    border: 2px solid rgb(0, 0, 0);
+    width: 100%;
+   
+
+}
+.degradado3{
+    width: 100%;
+    background: rgb(25, 63, 233);
+}
+
+.buttong{
+  background: rgb(204, 204, 204);
+  border-top-right-radius: 6px;
+  border-top-left-radius: 10px;
+  border-top-width: 1px;
+  border-right-width: 1px;
+  border-left-width: 1px;
+  border-bottom-width: 0px;
+  border-top-color: #5878ca;
+  border-left-color: #5878ca;
+  border-right-color: #5878ca;
+  height: 30px;  
+}
+
+.buttong:hover{
+  background: rgb(255, 255, 255);
+}
+.buttong:playing {
+  background: rgba(223, 8, 8, 0.774);
+
+}
+.caja { 
+
+    color: #000000; 
+
+    font-weight: 400; 
+    text-align: center; 
+    background: #889ccf; 
+    margin: 0 0 25px; 
+    overflow: hidden; 
+    padding: 20px; 
+    border-radius: 35px 0px 35px 0px; 
+    -moz-border-radius: 35px 0px 35px 0px; 
+    -webkit-border-radius: 35px 0px 35px 0px; 
+    border: 2px solid #5878ca;}
+    .customer-legend:before {
+        left: 100px;
+    }
+
+    fieldset.scheduler-border {
+        border: 2px groove rgb(0, 0, 0) !important;
+        text-align: justify !important;
+        -webkit-box-shadow: 0px 0px 0px 0px #000;
+        box-shadow: 0px 0px 0px 0px #000;
+        margin: 0 1em 0 0 !important;
+        margin-top: 20px !important;
+        
+        /*
+         padding: 0 1.4em 1.4em 1.4em !important;
+       */
+      }
+      
+      legend.scheduler-border {
+       /* font-size: 1.2em !important;
+        font-weight: bold !important;
+         padding: 0 10px;*/
+        text-align: center !important;
+        width: auto;
+        font-size: 15px;
+        border-bottom: none;
+        margin-top: -15px;
+        background-color: white;
+        color: black;
+      }
+
+      fieldset.scheduler-border2 {
+        border: 2px groove rgb(0, 0, 0) !important;
+       background: rgba(255, 255, 255, 0.644);
+        -webkit-box-shadow: 0px 0px 0px 0px #000;
+        box-shadow: 0px 0px 0px 0px #000;
+        margin: 1em 1em 1em 1em !important;
+        margin-top: 8px !important;
+        text-align: justify !important;
+       
+        /*
+         
+       */
+      }
+      
+      legend.scheduler-border2 {
+       /* font-size: 1.2em !important;
+        font-weight: bold !important;
+         padding: 0 10px;*/
+        text-align: left !important;
+        width: auto;
+        font-size: 15px;
+        border-bottom: none;
+        margin-top: -15px;
+        background-color: white;
+        color: black;
+      }
+.dark{
+    background: #000;
+}
+.con{
+    width: 40%;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src:  url('fonts/icomoon.eot?9a5qha');
+    src:  url('fonts/icomoon.eot?9a5qha#iefix') format('embedded-opentype'),
+      url('fonts/icomoon.ttf?9a5qha') format('truetype'),
+      url('fonts/icomoon.woff?9a5qha') format('woff'),
+      url('fonts/icomoon.svg?9a5qha#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+  }
+  
+  [class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+  
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  .icon-facebook:before {
+    content: "\ea90";
+  }
+.iconblack{
+  color: #000;
+}
+iframe{
+  display: block;
+  margin: 1em auto;
+  width: 80%;
+
+}

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> <%- title%> </title>
+    <%- include ('partials/head.html')%>
+</head>
+<body>
+    <%- include ('partials/navigation.html')%>
+    <br>
+       <div class="container-fluid  degradado">
+      
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-4 ">
+                  Primera de tres columnas
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8 ">
+                    <br>
+              
+          
+                                             
+                            <fieldset class="scheduler-border2">
+                                <legend class="scheduler-border2">  <b> Formulario de contacto</b></legend>
+                                <form action="/formcontact" method="POST" class="pblack">
+                                  <form>
+                                    <div class="row">
+                                      <div class="mb-3">
+                                        <label for="exampleInputEmail1" class="form-label">Nombre completo</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Escribte tu nombre completo" required>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="ejemplo@gmail.com" required>
+                                       </div>
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
+                                      <label for="exampleInputEmail1" class="form-label">Número de telefono</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="2222222222" required>
+                                      </div>
+                                    </div>
+                                    <div class="row">
+                                     
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-4">
+                                        <br>
+                                        <label for="exampleInputEmail1" class="form-label">Asunto:</label>
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Asunto del mensaje" required>
+                                       </div>
+                                      <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-8">
+                                        <div class="form-outline mb-4">
+                                          <br>
+                                          <label for="exampleInputEmail1" class="form-label">Mensaje:</label>
+                                          <textarea class="form-control" id="textAreaExample6" rows="3" placeholder="Escribe tu mensaje aqui"></textarea>
+                                          
+                                        </div>
+                                      </div>
+                                    </div>
+                                  <center><button type="submit" class="btn btn-primary">Enviar</button></center>                               
+                                  </form>
+                                </form>
+                            </fieldset>
+                            <fieldset class="scheduler-border2">
+                              <legend class="scheduler-border2">  <b> Redes Sociales</b></legend>
+                         
+                              
+                                 <div class="row">
+                                  <div class=" col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                                    <span class="fab fa-instagram  fa-5x iconblack">  </span> 
+                                 </div>
+                                 <div class=" col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                                  <span class="fab fa-whatsapp  fa-5x iconblack"></span>
+                                </div>
+                                <div class=" col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                                  <span class="fas fa-envelope  fa-5x iconblack">   </span>
+                                </div>
+                                <div class=" col-sm-2 col-md-3 col-lg-3 col-xl-3">
+                                  <span class="fab fa-facebook-square  fa-5x iconblack"> &nbsp;&nbsp;   </span>
+                                </div>
+                               </div>
+                     
+
+                              </fieldset> 
+               
+
+                    
+                 </div>
+                </div>
+             
+        </div>
+</body>
+</html>
